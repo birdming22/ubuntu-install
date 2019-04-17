@@ -1,5 +1,11 @@
 ## Install LXDE Desktop Environment
 
+### For Ubuntu 16.04
+
+    sudo -E bash lxde-16.04.sh
+
+### For Ubuntu 14.04
+
     sudo -E bash ubuntu-14.04-lxde.sh
 
 ## Setting

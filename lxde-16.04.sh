@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LXDE=" lxde xinit lightdm fonts-inconsolata xrdp"
+LXDE=" lxde xinit lxsession lightdm fonts-inconsolata xrdp"
 UTIL=" tmux git subversion openssh-server aptitude"
 CHINESE=" ttf-wqy-microhei ttf-wqy-zenhei xfonts-wqy fonts-inconsolata ibus ibus-chewing"
 DEV=" ddd"

@@ -1,5 +1,9 @@
 ## Install LXDE Desktop Environment
 
+### For Ubuntu 18.04 HWE
+
+    sudo -E bash lxde-18.04.sh
+
 ### For Ubuntu 16.04
 
     sudo -E bash lxde-16.04.sh

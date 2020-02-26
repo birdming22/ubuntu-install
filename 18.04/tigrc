@@ -1,0 +1,12 @@
+# See: http://www.calmar.ws/vim/256-xterm-24bit-rgb-color-chart.html
+# See: http://jonas.nitro.dk/tig/tigrc.5.html
+# See: https://github.com/jonas/tig/blob/5d53d2ddb26fc40d0e8d37c4f8eb6df2af492854/tigrc#L269
+#
+# Area                  Foreground      Background         Options
+# ==============================================================================
+
+# replace dark blue with cyan
+color date              cyan            default
+color diff-stat         cyan            default
+color diff-index        cyan            default
+color graph-commit      cyan            default

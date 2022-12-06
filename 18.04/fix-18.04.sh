@@ -8,4 +8,9 @@ timedatectl set-timezone Asia/Taipei
 cp tigrc ~/.tigrc
 # disable screen saver
 sed -i 's/mode\:\t\trandom/mode\:\t\toff/g' ~/.xscreensaver
+gsettings set org.gnome.desktop.screensaver lock-delay 3600
+gsettings set org.gnome.desktop.screensaver lock-enabled false
+gsettings set org.gnome.desktop.screensaver idle-activation-enabled false
 
+# disable suspend
+systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target

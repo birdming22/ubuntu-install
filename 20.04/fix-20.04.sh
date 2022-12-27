@@ -1,11 +1,11 @@
 # for auto update
-cp 20auto-upgrades /etc/apt/apt.conf.d/20auto-upgrades
+sudo cp 20auto-upgrades /etc/apt/apt.conf.d/20auto-upgrades
 
 # for ls
 cp dircolors ~/.dircolors
 
 # timezone
-timedatectl set-timezone Asia/Taipei
+sudo timedatectl set-timezone Asia/Taipei
 
 # for tig
 cp tigrc ~/.tigrc

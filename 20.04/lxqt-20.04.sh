@@ -30,5 +30,3 @@ fi
 if [ ! -f ~/.xsession ]; then
   cp xsession ~/.xsession
 fi
-
-apt purge -y network-manager

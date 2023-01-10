@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LXDE=" lxde xinit lxsession lightdm fonts-inconsolata xorgxrdp-hwe-18.04 xrdp"
+LXDE=" lxde xinit lxsession lightdm fonts-inconsolata xorgxrdp xrdp"
 UTIL=" tmux git tig subversion openssh-server aptitude ntp"
 CHINESE=" ttf-wqy-microhei ttf-wqy-zenhei xfonts-wqy fonts-inconsolata ibus ibus-chewing"
 DEV=" ddd"
@@ -12,9 +12,6 @@ PACKAGE_LIST+=$DEV
 
 sed 's@\/archive.ubuntu.com@\/tw.archive.ubuntu.com@' -i /etc/apt/sources.list
 apt-get update
-
-# for HWE
-apt install -y --install-recommends linux-generic-hwe-18.04 xserver-xorg-hwe-18.04
 
 for pkg in $PACKAGE_LIST; do
   #if dpkg --get-selections | grep -q "^$pkg[[:space:]]*install$"; then

@@ -14,7 +14,7 @@ sed 's@\/archive.ubuntu.com@\/tw.archive.ubuntu.com@' -i /etc/apt/sources.list
 apt-get update
 
 # for HWE
-apt install --install-recommends linux-generic-hwe-18.04 xserver-xorg-hwe-18.04
+apt install -y --install-recommends linux-generic-hwe-18.04 xserver-xorg-hwe-18.04
 
 for pkg in $PACKAGE_LIST; do
   #if dpkg --get-selections | grep -q "^$pkg[[:space:]]*install$"; then

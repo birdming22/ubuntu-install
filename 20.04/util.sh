@@ -2,4 +2,7 @@
 sudo apt install -y usb-creator-gtk
 
 # remote desktop
-sudo apt install remmina
+sudo apt install -y remmina
+
+# redshift
+sudo apt install -y redshift redshift-gtk

@@ -1,5 +1,6 @@
 # disable auto update
 sudo cp 20auto-upgrades /etc/apt/apt.conf.d/20auto-upgrades
+sudo apt remove unattended-upgrades
 
 # for ls
 cp dircolors ~/.dircolors

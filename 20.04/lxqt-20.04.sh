@@ -23,10 +23,5 @@ for pkg in $PACKAGE_LIST; do
   fi
 done
 
-if [ ! -f ~/.tmux.conf ]; then
-  cp tmux.conf ~/.tmux.conf
-fi
-
-if [ ! -f ~/.xsession ]; then
-  cp xsession ~/.xsession
-fi
+cp tmux.conf ~/.tmux.conf
+cp xsession ~/.xsession

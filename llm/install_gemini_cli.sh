@@ -36,8 +36,6 @@ else
     echo "NVM 已準備就緒: $(nvm --version)"
 fi
 
----
-
 # --- 步驟 2: 安裝 Node.js v22 及 npm ---
 echo "正在安裝 Node.js v22 (及對應的 npm)..."
 if nvm install 22; then
@@ -66,12 +64,10 @@ else
     echo "警告: Node.js 版本不是 v22.x。當前版本: $NODE_VERSION"
 fi
 
----
-
 # --- 步驟 3: 安裝 Gemini CLI ---
 echo "正在使用 npm 全域安裝 Gemini CLI..."
 # 使用 sudo 以確保全域安裝權限
-sudo npm install -g @google/gemini-cli
+npm install -g @google/gemini-cli
 
 if [ $? -eq 0 ]; then
     echo "Gemini CLI 安裝成功！"
@@ -79,8 +75,6 @@ else
     echo "錯誤: Gemini CLI 安裝失敗。請檢查上方輸出訊息。"
     exit 1
 fi
-
----
 
 # --- 步驟 4: 執行 Gemini CLI 初次設定 (主題與認證) ---
 echo ""

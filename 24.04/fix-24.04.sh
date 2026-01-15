@@ -25,3 +25,7 @@ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.ta
 
 # install software
 sudo apt install net-tools
+
+# unprivileged user namespaces for joplin, obsidian (Electron AppImage)
+sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+
